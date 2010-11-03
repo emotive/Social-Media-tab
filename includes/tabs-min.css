@@ -1,0 +1,146 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* root element for tabs  */
+ul.css-tabs {  
+	margin:0 !important; 
+	padding:0;
+	height:30px;
+	border-bottom:1px solid #666;	 	
+}
+
+/* single tab */
+ul.css-tabs li {  
+	float:left;	 
+	padding:0; 
+	margin:0;  
+	list-style-type:none;	
+}
+
+/* link inside the tab. uses a background image */
+ul.css-tabs a { 
+	float:left;
+	font-size:13px;
+	display:block;
+	/*padding:5px 30px;*/
+	padding:5px;
+	text-decoration:none;
+	border:1px solid #666;	
+	border-bottom:0px;
+	height:18px;
+	background-color:#efefef;
+	color:#777;
+	margin-right:2px;
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-topright:4px;
+	position:relative;
+	top:1px;	
+}
+
+ul.css-tabs a:hover {
+	background-color:#F7F7F7;
+	color:#333;
+}
+	
+/* selected tab */
+ul.css-tabs a.current {
+	/*background-color:#ddd;*/
+	background-color:white;
+	border-bottom:2px solid #ddd;	
+	color:#000;	
+	cursor:default;
+}
+
+	
+/* tab pane */
+div.css-panes div.tabs-display {
+	display:none;
+	border:1px solid #666;
+	border-width:0 1px 1px 1px;
+	min-height:150px;
+	/*background-color:#ddd;*/	
+}
+
+.tabs_wrapper {
+	font-family:"Lucida Grande","Lucida Sans Unicode","bitstream vera sans","trebuchet ms",verdana;
+	font-size:12px;
+}
+
+body {
+	margin:0;
+}
+
+
+/* tab pane styling */
+div.panes div.tabs-display {
+	display:none;		
+	padding:15px 10px;
+	border:1px solid #999;
+	border-top:0;
+	height:100px;
+	font-size:14px;
+	background-color:#fff;
+}
+
+ul.css-tabs li img {
+	border: 0;
+	margin-right:5px;
+	
+}
+
+div.css-panes div.tab_rss_item {
+	display:block;
+	margin:10px 10px 0;
+	padding: 15px 20px;
+	overflow:hidden;
+	border-bottom:1px dashed grey;
+}
+
+.tabs-display {
+	overflow:auto;
+	/*height:500px;*/
+}
+
+.tabs-display h2 {
+	font-size: 18px;	
+}
+
+.tabs-display h2 a {
+	color:#333;
+	text-decoration:none;
+	margin: 20px 0 15px 20px;
+}
+
+.tabs-display h2 a:hover, .tabs-display h2 a:active {
+	color:#999;
+	text-decoration:underline;
+}
+
+.tabs_wrapper a, .tabs_wrapper a:visited {
+	color:#333;
+	text-decoration:underline;
+	font-weight:bold;
+}
+
+.tabs_wrapper a:hover {
+	color:red;
+	text-decoration:none;
+}
+
+.tab_rss_item small {
+	display:block;
+	margin: 5px 0 0 0;
+}
+
+.tab_rss_item img {
+	border: 0;	
+	float:left;
+	margin-right:10px;
+}
+
+span.tabs_share {
+	display:block;
+	float:right;
+	margin:5px;
+}
+
